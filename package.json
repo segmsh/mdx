@@ -1,0 +1,40 @@
+{
+  "name": "@segmsh/mdx",
+  "repository": "segmsh/mdx",
+  "license": "Apache-2.0",
+  "author": "Segm.sh",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "tsc",
+    "test": "vitest run"
+  },
+  "peerDependencies": {
+    "@segmsh/core": "^0.2.0"
+  },
+  "dependencies": {
+    "@segmsh/md": "^0.1.0",
+    "remark-frontmatter": "^5.0.0",
+    "remark-gfm": "^4.0.1",
+    "remark-mdx": "^3.1.1",
+    "remark-parse": "^11.0.0",
+    "remark-stringify": "^11.0.0",
+    "unified": "^11.0.5"
+  },
+  "devDependencies": {
+    "eol": "^0.10.0",
+    "typescript": "^6.0.2",
+    "vitest": "^4.1.4"
+  }
+}
